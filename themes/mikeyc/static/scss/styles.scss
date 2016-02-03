@@ -1,0 +1,65 @@
+// compileCompressed: ../css/styles.min.css
+
+@import 'colors';
+@import 'media-queries';
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: $color-back-1;
+}
+
+@include media($break-xs) {
+	.container {
+		padding: 0;
+	}
+}
+@include media($break-md) {
+	.container {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+@include media($break-lg) {
+	.container {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+h1, h2, h3 {
+	margin: 0;
+	line-height: 1.48;
+}
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+	color: mix( mix($color-back-1, black, 30), $color-brand-2, 70 );
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: mix( mix($color-back-1, black, 70), $color-brand-2, 90 );
+}
+
+a,
+.link {
+	color: $color-brand-1;
+	text-decoration: none;
+	border-bottom: .1em solid currentColor;
+	line-height: 1;
+	cursor: pointer;
+}
+a:hover,
+.link:hover {
+	color: $color-brand-2;
+}
+
+@import 'devstory';
+
+@import 'utilities';
