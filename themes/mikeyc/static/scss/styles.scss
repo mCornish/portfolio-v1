@@ -9,9 +9,10 @@ html {
 
 body {
 	background-color: $color-back-1;
+	margin: 0;
 }
 
-@include media($break-xs) {
+@include media($break-sm) {
 	.container {
 		padding: 0;
 	}
@@ -60,6 +61,35 @@ a:hover,
 	color: $color-brand-2;
 }
 
+.header {
+
+}
+
+.subheader {
+
+}
+
+.intro-text {
+	font-size: 3em;
+}
+
+.cta-box {
+	padding: 3em;
+}
+
+.cta {
+	display: block;
+	text-align: center;
+	color: $color-back-1;
+	font-size: 2em;
+	border: 3px solid currentColor;
+	border-radius: 5em;
+	padding: 1em;
+	text-decoration: none;
+}
+
 @import 'devstory';
+
+@import 'contact';
 
 @import 'utilities';

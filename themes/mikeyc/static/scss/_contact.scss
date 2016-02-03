@@ -1,0 +1,6 @@
+// main: styles.scss
+
+.contact {
+	background-color: mix( mix($color-back-1, black, 10), $color-brand-2, 90 );
+	color: $color-back-1;
+}

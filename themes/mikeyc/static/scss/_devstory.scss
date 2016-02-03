@@ -2,4 +2,23 @@
 
 .devstory {
 	font-family: 'Courier';
+	background-color: black;
+	color: $color-back-1;
+}
+.devstory__logo {
+	font-size: 3em;
+	line-height: 1;
+}
+.devstory__title,
+.devstory__subtitle {
+	color: $color-back-1;
+	text-align: center;
+}
+.devstory__title {
+	margin-top: 1em;
+	font-size: 2em;
+
+}
+.devstory__subtitle {
+	font-size: 1.3em;
 }
