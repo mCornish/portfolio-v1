@@ -6,18 +6,19 @@
 	color: $color-back-1;
 }
 .devstory__logo {
-	font-size: 3em;
+	font-size: 2em;
+	opacity: .7;
 	line-height: 1;
 }
 .devstory__title,
 .devstory__subtitle {
 	color: $color-back-1;
+	font-weight: normal;
 	text-align: center;
 }
 .devstory__title {
 	margin-top: 1em;
-	font-size: 2em;
-
+	font-size: 1.5em;
 }
 .devstory__subtitle {
 	font-size: 1.3em;

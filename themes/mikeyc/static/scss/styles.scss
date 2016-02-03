@@ -1,10 +1,18 @@
-// compileCompressed: ../css/styles.min.css
+/* compileCompressed: ../css/styles.min.css*/
 
 @import 'colors';
 @import 'media-queries';
 
-html {
-	font-size: 16px;
+
+@include media($break-xs) {
+	html {
+		font-size: 12px;
+	}
+}
+@include media($break-md) {
+	html {
+		font-size: 18px;
+	}
 }
 
 body {
@@ -19,14 +27,14 @@ body {
 }
 @include media($break-md) {
 	.container {
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 }
 @include media($break-lg) {
 	.container {
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 20vw;
+		padding-right: 20vw;
 	}
 }
 
@@ -39,13 +47,17 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: mix( mix($color-back-1, black, 30), $color-brand-2, 70 );
 }
 
 h3 {
 	font-size: 1.5rem;
 	color: mix( mix($color-back-1, black, 70), $color-brand-2, 90 );
+}
+
+p, a {
+	font-size: 1rem;
 }
 
 a,
@@ -55,6 +67,8 @@ a,
 	border-bottom: .1em solid currentColor;
 	line-height: 1;
 	cursor: pointer;
+	-webkit-transition: all .1s ease-in;
+	transition: all .1s ease-in;
 }
 a:hover,
 .link:hover {
@@ -62,7 +76,25 @@ a:hover,
 }
 
 .header {
-
+	transition-delay: .1s;
+}
+.header:hover {
+	transition-delay: 0s;
+}
+.header::after {
+	content: '›\0000a0';
+	position: absolute;
+	float: right;
+	margin-left: -.2em;
+	opacity: 0;
+	color: $color-brand-2;
+	-webkit-transition: .2s all ease;
+	transition: .1s all ease;
+	transition-delay: .1s;
+}
+.header:hover::after {
+	margin-left: .2em;
+	opacity: 1;
 }
 
 .subheader {
@@ -70,26 +102,78 @@ a:hover,
 }
 
 .intro-text {
-	font-size: 3em;
+	font-size: 2.5em;
+	text-align: center;
+	padding: .5em 0;
 }
 
 .cta-box {
-	padding: 3em;
+	padding: 4em;
+}
+@include media($break-xs) {
+	.cta-box {
+		padding: 2em;
+	}
+}
+@include media($break-md) {
+	.cta-box {
+		padding: 4em;
+	}
 }
 
 .cta {
 	display: block;
 	text-align: center;
 	color: $color-back-1;
-	font-size: 2em;
+	font-size: 1.5em;
+	font-weight: bold;
 	border: 3px solid currentColor;
 	border-radius: 5em;
 	padding: 1em;
 	text-decoration: none;
+	margin: 2em auto 0;
+}
+@include media($break-xs) {
+	.cta {
+		max-width: 100%;
+	}
+}
+@include media($break-md) {
+	.cta {
+		max-width: 50%;
+	}
+}
+.cta:hover {
+	background-color: $color-brand-2;
+	color: $color-back-1;
+	border-color: $color-brand-2;
+}
+
+@include media($break-xs) {
+	.image-box {
+		width: 48vw;
+		height: 48vw;
+	}
+}
+@include media($break-md) {
+	.image-box {
+		width: calc(90vw * .48);
+		height: calc(90vw * .48);
+	}
+}
+@include media($break-lg) {
+	.image-box {
+		width: calc(60vw * .48);
+		height: calc(60vw * .48);
+	}
 }
 
 @import 'devstory';
 
 @import 'contact';
+
+@import 'novel';
+
+@import 'bowplease';
 
 @import 'utilities';
