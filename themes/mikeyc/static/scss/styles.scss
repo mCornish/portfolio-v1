@@ -148,7 +148,7 @@ a:hover,
 }
 @include media($break-md) {
 	.cta {
-		max-width: 50%;
+		width: 50%;
 	}
 }
 .cta:hover {
@@ -180,7 +180,7 @@ a:hover,
 }
 
 .hover-lift {
-	transition: all .2s ease;
+	transition: all .5s ease;
 }
 .hover-lift:hover:not(.is-expanded) {
 	-webkit-transform: scale(.99);

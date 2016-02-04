@@ -7,23 +7,23 @@
 
 .bowplease__image-1 {
 	display: block;
-	width: 10em;
+	width: 50%;
 	height: auto;
-	margin: 7em auto 0;
-	transform: translateX(20em);
+	margin: 35% auto 0;
+	transform: translateX(150%);
 	transition: all .4s ease;
 }
 .bowplease:hover .bowplease__image-1 {
-	transform: translateX(3em);
+	transform: translateX(30%);
 }
 
 .bowplease__image-2 {
 	display: block;
-	width: 10em;
+	width: 50%;
 	height: auto;
 	margin: 0 auto;
 	transition: all .2s ease;
 }
 .bowplease:hover .bowplease__image-2 {
-	transform: translateX(-3em);
+	transform: translateX(-30%);
 }
