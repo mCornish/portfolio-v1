@@ -19,6 +19,8 @@
 body {
 	background-color: $color-back-1;
 	margin: 0;
+	-webkit-transition: background-color .2s ease;
+	transition: background-color .2s ease;
 }
 
 @include media($break-sm) {
@@ -49,12 +51,12 @@ h1 {
 
 h2 {
 	font-size: 2.1rem;
-	color: mix( mix($color-back-1, black, 30), $color-brand-2, 70 );
+	color: $color-brand-2;
 }
 
 h3 {
 	font-size: 1.5rem;
-	color: mix( mix($color-back-1, black, 70), $color-brand-2, 90 );
+	color: $color-text-1;
 }
 
 p, a {
@@ -77,12 +79,14 @@ a:hover,
 }
 
 .header {
-	transition-delay: .1s;
+	-webkit-transition-delay: .1s;
+	        transition-delay: .1s;
 	font-family: $merriweather-sans;
 	margin-top: 1em;
 }
 .header:hover {
-	transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
 }
 .header::after {
 	content: '›\0000a0';
@@ -92,8 +96,10 @@ a:hover,
 	opacity: 0;
 	color: $color-brand-2;
 	-webkit-transition: .2s all ease;
+	-webkit-transition: .1s all ease;
 	transition: .1s all ease;
-	transition-delay: .1s;
+	-webkit-transition-delay: .1s;
+	        transition-delay: .1s;
 }
 .header:hover::after {
 	margin-left: .2em;
@@ -112,7 +118,8 @@ a:hover,
 }
 
 .cta-box {
-	padding: 4em;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
 }
 @include media($break-xs) {
 	.cta-box {
@@ -153,6 +160,9 @@ a:hover,
 	border-color: $color-brand-2;
 }
 
+.image-box {
+	cursor: pointer;
+}
 @include media($break-xs) {
 	.image-box {
 		width: 48vw;
@@ -171,6 +181,20 @@ a:hover,
 		height: calc(60vw * .48);
 	}
 }
+.image-box.is-expanded {
+	transform: scaleX(2);
+}
+
+.hover-lift {
+	transition: all .2s ease;
+}
+.hover-lift:hover {
+	-webkit-transform: scale(.99);
+	        transform: scale(.99);
+	box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+}
+
+@import 'themes';
 
 @import 'devstory';
 
