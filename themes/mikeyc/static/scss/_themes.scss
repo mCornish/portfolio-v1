@@ -1,7 +1,11 @@
 // main: styles.scss
 
+body {
+	transition: background-color 1s ease;
+}
+
 .theme-dark {
-	background-color: hsl(0,0,10);
+	background-color: hsl(0,0,20);
 }
 .theme-dark .image-box {
 	opacity: .1;

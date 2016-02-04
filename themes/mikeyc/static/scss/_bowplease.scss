@@ -2,4 +2,28 @@
 
 .bowplease {
 	background-color: $color-brand-2;
+	overflow: hidden;
+}
+
+.bowplease__image-1 {
+	display: block;
+	width: 10em;
+	height: auto;
+	margin: 7em auto 0;
+	transform: translateX(20em);
+	transition: all .4s ease;
+}
+.bowplease:hover .bowplease__image-1 {
+	transform: translateX(3em);
+}
+
+.bowplease__image-2 {
+	display: block;
+	width: 10em;
+	height: auto;
+	margin: 0 auto;
+	transition: all .2s ease;
+}
+.bowplease:hover .bowplease__image-2 {
+	transform: translateX(-3em);
 }
