@@ -1,6 +1,6 @@
 {{ partial "header.html" }}
 	<header class="flex-center-col">
-		<h1 class="header link" onclick="openAbout()">Mike Cornish</h1>
+		<h1 class="header link">Mike Cornish</h1>
 		<h2 class="subheader">Frontend Developer</h2>
 		<h3 class="intro-text">Tell Your Story</h3>
 	</header>
@@ -16,10 +16,10 @@
 		<h3 class="intro-text">Excercise Creativity</h3>
 	</header>
 	<div class="flex-between">
-		<div class="novel image-box hover-lift js-sample" data-hook="theme-change" data-theme="brand-1">
+		<div class="novel image-box hover-lift js-novel" data-hook="theme-change" data-theme="brand-1">
 			<img src="" />
 		</div>
-		<div class="bowplease image-box hover-lift js-sample" data-hook="theme-change" data-theme="brand-2">
+		<div class="bowplease image-box hover-lift js-bowplease" data-hook="theme-change" data-theme="brand-2">
 			<img src="" />
 			<img src="" />
 		</div>
@@ -36,5 +36,7 @@
 		</p>
 		<a class="cta" href="mailto:cornishmw@gmail.com">cornishmw@gmail.com</a>
 	</div>
+
 	{{ partial "novel.html" }}
+	{{ partial "bowplease.html" }}
 {{ partial "footer.html" }}

@@ -197,9 +197,26 @@ a:hover,
 	left: 0;
 	transform: translateX(-100vw);
 	transition: all .2s ease;
+	z-index: 3;
 }
 .drawer-left.is-active {
 	transform: none;
+}
+
+.close-button {
+	position: absolute;
+	color: black;
+	opacity: .5;
+	font-family: $merriweather-sans;
+	font-size: 3em;
+	padding: 0 1em;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition: opacity .2s ease;
+}
+.close-button:hover {
+	opacity: 1;
 }
 
 @import 'themes';
