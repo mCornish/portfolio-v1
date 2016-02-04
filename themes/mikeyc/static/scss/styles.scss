@@ -79,28 +79,25 @@ a:hover,
 }
 
 .header {
-	-webkit-transition-delay: .1s;
-	        transition-delay: .1s;
 	font-family: $merriweather-sans;
 	margin-top: 1em;
 }
 .header:hover {
-	-webkit-transition-delay: 0s;
-	        transition-delay: 0s;
+	margin-top: 1.1em;
 }
-.header::after {
-	content: '›\0000a0';
-	position: absolute;
-	float: right;
-	margin-left: -.2em;
-	opacity: 0;
-	color: $color-brand-2;
-	-webkit-transition: .2s all ease;
-	-webkit-transition: .1s all ease;
-	transition: .1s all ease;
-	-webkit-transition-delay: .1s;
-	        transition-delay: .1s;
-}
+// .header::after {
+// 	content: '▾\0000a0';
+// 	position: absolute;
+// 	float: right;
+// 	margin-left: -.2em;
+// 	opacity: 0;
+// 	color: $color-brand-2;
+// 	-webkit-transition: .2s all ease;
+// 	-webkit-transition: .1s all ease;
+// 	transition: .1s all ease;
+// 	-webkit-transition-delay: .1s;
+// 	        transition-delay: .1s;
+// }
 .header:hover::after {
 	margin-left: .2em;
 	opacity: 1;
@@ -191,16 +188,61 @@ a:hover,
 	box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
 }
 
-.drawer-left {
+.in-left {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	transform: translateX(-100vw);
 	transition: all .2s ease;
 	z-index: 3;
 }
-.drawer-left.is-active {
+.in-left.is-active {
 	transform: none;
+}
+.out-left {
+	transform: none;
+	transition: all .2s ease;
+}
+.out-left.is-active {
+	transform: translateX(-30vw) scale(.9);
+}
+
+.in-right {
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(100vw);
+	transition: all .2s ease;
+	z-index: 3;
+}
+.in-right.is-active {
+	transform: none;
+}
+.out-right {
+	transform: none;
+	transition: all .2s ease;
+}
+.out-right.is-active {
+	transform: translateX(30vw) scale(.9);
+}
+
+.in-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateY(-100vh);
+	transition: all .2s ease;
+	z-index: 3;
+}
+.in-top.is-active {
+	transform: none;
+}
+.out-bot {
+	transform: none;
+	transition: all .2s ease;
+}
+.out-bot.is-active {
+	transform: translateY(30vh) scale(.9);
 }
 
 .close-button {
@@ -224,6 +266,7 @@ a:hover,
 @import 'contact';
 @import 'novel';
 @import 'bowplease';
+@import 'about';
 @import 'sample-details';
 
 @import 'utilities';
