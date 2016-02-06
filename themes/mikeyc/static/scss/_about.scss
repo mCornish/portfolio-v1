@@ -6,47 +6,11 @@
 	height: 100vh;
 	overflow: scroll;
 }
-@media screen and (orientation: landscape) {
-	.about__content {
-		display: block;
-	}
+
+.about__cta {
+	color: $color-brand-1;
 }
-@media screen and (orientation: portrait) {
-	.about__content {
-		// display: flex;
-		// flex-direction: column;
-		// flex-wrap: nowrap;
-		// justify-content: center;
-		// align-items: center;
-		// height: 100%;
-	}
-}
-// Container forces image to maintain aspect ratio
-.about__image {
-	display: block;
-	position: relative;
-	width: 100%;
-}
-@media screen and (orientation: landscape) {
-	.about__image {
-		padding-bottom: 30%;
-	}
-}
-@media screen and (orientation: portrait) {
-	.about__image {
-		padding-bottom: 60%;
-	}
-}
-.about__image img {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0 auto;
-	width: auto;
-	height: 100%;
-}
-.about__text {
-	padding: 1em;
+.about__cta:hover {
+	color: $color-brand-2;
+	background-color: $color-back-1;
 }

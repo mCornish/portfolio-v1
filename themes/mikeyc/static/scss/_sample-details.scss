@@ -3,6 +3,8 @@
 .sample-details {
 	width: 100vw;
 	height: 100vh;
+	overflow: scroll;
+	color: $color-back-1;
 }
 
 .novel-details {
