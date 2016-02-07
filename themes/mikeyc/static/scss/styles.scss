@@ -158,6 +158,11 @@ a:hover,
 	color: $color-back-1;
 	border-color: $color-brand-2;
 }
+.cta--color-flip:hover {
+	background-color: $color-brand-1;
+	color: $color-back-1;
+	border-color: $color-brand-1;
+}
 
 .image-box {
 	cursor: pointer;
