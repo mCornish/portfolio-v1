@@ -2,4 +2,3 @@ theme = "mikeyc"
 baseurl = "http://mikecornish.net"
 languageCode = "en-us"
 title = "Mike Cornish"
-canonifyurls = true
