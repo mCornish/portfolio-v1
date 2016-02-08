@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Mike Cornish</title>
+    <link>http://mikecornish.net/categories/development/</link>
+    <description>Recent content in Development on Mike Cornish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://mikecornish.net/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>spf13-vim 3.0 release and new website</title>
+      <link>http://mikecornish.net/about/</link>
+      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://mikecornish.net/about/</guid>
+      <description>&lt;p&gt;Content of the file goes Here&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>spf13-vim 3.0 release and new website</title>
+      <link>http://mikecornish.net/spf13-vim-3-0-release-and-new-website/</link>
+      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://mikecornish.net/spf13-vim-3-0-release-and-new-website/</guid>
+      <description>&lt;p&gt;Content of the file goes Here&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
