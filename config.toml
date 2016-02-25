@@ -1,15 +1,8 @@
 theme = "mikeyc"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
->>>>>>> 63f491171b8abd8cca3cf7975af0be199fdd8183
-baseurl = "http://mikecornish.net"
-=======
 baseurl = "http://mcornish.github.io/"
->>>>>>> 5858b974eafc1a4ec53e64451e251284d3c6c41a
 languageCode = "en-us"
 [params]
   title = "Mike Cornish"
