@@ -1,0 +1,6 @@
+theme = "mikeyc"
+baseurl = "http://mcornish.github.io/"
+languageCode = "en-us"
+[params]
+  title = "Mike Cornish"
+  description = "Web developer/designer Mike Cornish's portfolio"
