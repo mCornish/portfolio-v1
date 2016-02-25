@@ -1,7 +1,4 @@
 theme = "mikeyc"
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
 baseurl = "http://mcornish.github.io/"
 languageCode = "en-us"
 [params]
