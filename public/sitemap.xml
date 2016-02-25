@@ -8,7 +8,12 @@
   </url>
   
   <url>
-    <loc>http://mikecornish.net/sample/spf13-vim-3-0-release-and-new-website/</loc>
+    <loc>http://mikecornish.net/about/</loc>
+    <lastmod>2016-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mikecornish.net/spf13-vim-3-0-release-and-new-website/</loc>
     <lastmod>2016-02-02T00:00:00+00:00</lastmod>
   </url>
   

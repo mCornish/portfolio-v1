@@ -1,0 +1,12 @@
+// main: styles.scss
+
+.contact {
+	background-color: hsl(0,0,10);
+	color: $color-back-1;
+	font-family: $merriweather-sans;
+}
+.contact__header {
+	text-align: center;
+	font-size: 2.3em;
+	opacity: .5;
+}

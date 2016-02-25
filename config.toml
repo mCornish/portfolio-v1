@@ -1,4 +1,10 @@
 theme = "mikeyc"
+<<<<<<< HEAD
+=======
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+>>>>>>> 63f491171b8abd8cca3cf7975af0be199fdd8183
 baseurl = "http://mikecornish.net"
 languageCode = "en-us"
 title = "Mike Cornish"

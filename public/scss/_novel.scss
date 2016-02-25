@@ -1,0 +1,33 @@
+// main: styles.scss
+
+.novel {
+	background-color: $color-brand-1;
+	position: relative;
+}
+
+.novel__image {
+	position: absolute;
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+.novel:hover .novel__image {
+	opacity: 0;
+}
+
+.novel__image-hover {
+	position: absolute;
+	opacity: 0;
+	width: 88%;
+	height: auto;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	transition: opacity .5s ease;
+}
+.novel:hover .novel__image-hover {
+	opacity: 1;
+}
+
+.novel__hero {
+	opacity: .8;
+}

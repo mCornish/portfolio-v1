@@ -1,0 +1,45 @@
+// main: styles.scss
+
+.color-brand-1 {
+	color: $color-brand-1 !important;
+}
+.color-brand-2 {
+	color: $color-brand-2 !important;
+}
+
+.flex-between {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.flex-center-col {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.inline-block {
+	display: inline-block !important;
+}
+
+.text-center {
+	text-align: center !important;
+	width: 100%;
+}
+
+.width-full {
+	width: 100% !important;
+}
+.width-half {
+	width: 50% !important;
+}
