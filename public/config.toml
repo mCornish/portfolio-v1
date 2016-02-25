@@ -1,7 +1,0 @@
-theme = "mikeyc"
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-baseurl = "http://mikecornish.net"
-languageCode = "en-us"
-title = "Mike Cornish"
