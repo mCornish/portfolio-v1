@@ -87,19 +87,6 @@ a:hover,
 .header:hover {
 	margin-top: 1.1em;
 }
-// .header::after {
-// 	content: '▾\0000a0';
-// 	position: absolute;
-// 	float: right;
-// 	margin-left: -.2em;
-// 	opacity: 0;
-// 	color: $color-brand-2;
-// 	-webkit-transition: .2s all ease;
-// 	-webkit-transition: .1s all ease;
-// 	transition: .1s all ease;
-// 	-webkit-transition-delay: .1s;
-// 	        transition-delay: .1s;
-// }
 .header:hover::after {
 	margin-left: .2em;
 	opacity: 1;
